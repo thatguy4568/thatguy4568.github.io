@@ -1,3 +1,8 @@
+/* === Smooth Scroll === */
+html {
+  scroll-behavior: smooth;
+}
+
 /* === Background & Base === */
 body {
   margin: 0;
@@ -7,7 +12,7 @@ body {
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
-  color: #333;
+  color: white;
 }
 
 /* === Header === */
@@ -47,14 +52,39 @@ nav ul li a:hover {
   text-decoration: underline;
 }
 
-/* === Bubble Style === */
-.bubble {
-  background-color: rgba(255, 255, 255, 0.95);
+/* === About Section === */
+.about-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
   margin: 2em auto;
+  max-width: 900px;
+}
+
+.about-text {
+  flex: 1 1 400px;
+}
+
+.about-image {
+  flex: 1 1 300px;
+}
+
+.about-image img {
+  max-width: 100%;
+  border-radius: 12px;
+}
+
+/* === Bubble Style === */
+.bubble, .flex-bubble, section {
+  background-color: rgba(255, 255, 255, 0.1); /* soft transparency */
+  color: white;
   padding: 2em;
   border-radius: 25px;
-  max-width: 800px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  margin: 2em auto;
+  max-width: 900px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
 .center {
@@ -75,6 +105,12 @@ nav ul li a:hover {
   flex: 1 1 300px;
 }
 
+/* === Lists === */
+ul li {
+  margin-bottom: 0.8em;
+  line-height: 1.5;
+}
+
 /* === Buttons === */
 .button {
   display: inline-block;
@@ -86,6 +122,8 @@ nav ul li a:hover {
   text-decoration: none;
   font-weight: bold;
   transition: background-color 0.3s ease;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
 .button:hover {
@@ -106,5 +144,15 @@ footer {
   .bubble-row {
     flex-direction: column;
     align-items: center;
+  }
+
+  .about-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
   }
 }
