@@ -60,7 +60,7 @@
     }
 
     /* === Bubble Style === */
-    .bubble, .about-container, .flex-bubble, section {
+    .bubble, .flex-bubble, section {
       background-color: rgba(255, 255, 255, 0.1);
       color: white;
       padding: 2em;
@@ -76,6 +76,39 @@
 
     .center {
       text-align: center;
+    }
+
+    /* === About Section Enhancements === */
+    .about-container {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: 2em;
+      margin: 2em auto;
+      max-width: 900px;
+    }
+
+    .about-text {
+      flex: 1 1 400px;
+    }
+
+    .about-image {
+      flex: 1 1 300px;
+      text-align: center;
+    }
+
+    .about-image img {
+      max-width: 100%;
+      border-radius: 12px;
+      border: 3px solid rgba(255,255,255,0.3);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .about-image img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 12px 30px rgba(0,0,0,0.5);
     }
 
     /* Side-by-side bubbles */
@@ -129,6 +162,10 @@
         flex-direction: column;
         align-items: center;
       }
+
+      .about-text, .about-image {
+        flex: 1 1 100%;
+      }
     }
   </style>
 </head>
@@ -146,7 +183,7 @@
         <li><a href="#linkedin">LinkedIn</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#experience">Experience</a></li>
-        <li><a href="#associations&interest">Associations & Interest</a></li>
+        <li><a href="#associations">Associations & Interests</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
@@ -164,7 +201,7 @@
         </p>
       </div>
       <div class="about-image">
-        <img src="Norm2.JPG" alt="Photo of Norm Miller" style="max-width: 100%; border-radius: 12px;">
+        <img src="Norm2.JPG" alt="Photo of Norm Miller">
       </div>
     </section>
 
@@ -214,8 +251,8 @@
           <li>ResCare NYC SYEP — Clerical Intern (07/2014 – 08/2014)</li>
         </ul>
       </section>
-      
-    <section id="associations & intrests">
+
+      <section id="associations">
         <h2>Associations & Interests</h2>
         <ul style="text-align: left;">
           <li>NYPIRG — Statewide Student Board of Directors (06/2024 – Present)</li>
@@ -225,7 +262,7 @@
 
     <section id="contact">
       <h2>Contact</h2>
-      <p>Email me at: <a href="mailto:norm.miller1@gmail.com">norm.miller1@gmail.com or at <a href="mailto:Norm.Miller@mail.citytech.cuny.edu">Norm.Miller@mail.citytech.cuny.edu</a></p>
+      <p>Email me at: <a href="mailto:norm.miller1@gmail.com">norm.miller1@gmail.com</a> or <a href="mailto:Norm.Miller@mail.citytech.cuny.edu">Norm.Miller@mail.citytech.cuny.edu</a></p>
       <p>Phone Number: 1-646-926-6178</p>
     </section>
   </main>
@@ -239,4 +276,3 @@
 
 </body>
 </html>
-
