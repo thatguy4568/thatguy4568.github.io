@@ -27,7 +27,6 @@
       background-color: rgba(0, 0, 128, 0.85);
       padding: 1.5em 0;
       text-align: center;
-      color: white;
       box-shadow: 0 4px 10px rgba(0,0,0,0.2);
     }
 
@@ -60,7 +59,7 @@
     }
 
     /* === Bubble Style === */
-    .bubble, .flex-bubble, section {
+    section {
       background-color: rgba(255, 255, 255, 0.1);
       color: white;
       padding: 2em;
@@ -72,7 +71,7 @@
 
     h2, p, li, a {
       color: white;
-      text-decoration: none; /* remove underline from links by default */
+      text-decoration: none;
     }
 
     .center {
@@ -112,20 +111,6 @@
       box-shadow: 0 12px 30px rgba(0,0,0,0.5);
     }
 
-    /* Side-by-side bubbles */
-    .bubble-row {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 2em;
-      margin: 2em auto;
-      max-width: 900px;
-    }
-
-    .side {
-      flex: 1 1 300px;
-    }
-
     /* === Buttons === */
     .button {
       display: inline-block;
@@ -148,17 +133,11 @@
       text-align: center;
       padding: 1em;
       background-color: rgba(0, 0, 128, 0.85);
-      color: white;
       margin-top: 3em;
     }
 
     /* === Responsive === */
     @media (max-width: 700px) {
-      .bubble-row {
-        flex-direction: column;
-        align-items: center;
-      }
-
       .about-container {
         flex-direction: column;
         align-items: center;
@@ -182,9 +161,11 @@
         <li><a href="#about">About</a></li>
         <li><a href="#resume">Resume</a></li>
         <li><a href="#linkedin">LinkedIn</a></li>
+        <li><a href="#certificates">Certificates</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#experience">Experience</a></li>
-        <li><a href="#associations">Associations & Interests</a></li>
+        <li><a href="#associations">Associations</a></li>
+        <li><a href="#hobbies">Hobbies</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
@@ -202,77 +183,75 @@
         </p>
       </div>
       <div class="about-image">
-        <img src="Norm2.JPG" alt="Photo of Norm Miller">
+        <img src="Norm2.JPG" alt="Portrait of Norm Miller">
       </div>
     </section>
 
-    <div class="flex-bubble">
-      <section id="resume">
-        <h2>Resume</h2>
-        <p>Click below to download my resume:</p>
-        <a class="button" href="Resume.pdf" download="NormMiller_Resume.pdf">Download Resume</a>
-      </section>
+    <section id="resume">
+      <h2>Resume</h2>
+      <p>Click below to download my resume:</p>
+      <a class="button" href="Resume.pdf" download="NormMiller_Resume.pdf">Download Resume</a>
+    </section>
 
-      <section id="linkedin">
-        <h2>LinkedIn (Under Construction)</h2>
-        <p>Connect with me on LinkedIn:</p>
-        <a class="button" href="https://www.linkedin.com/in/norm-miller-94968336b/" target="_blank">Visit My LinkedIn</a>
-      </section>
+    <section id="linkedin">
+      <h2>LinkedIn</h2>
+      <p>Connect with me on LinkedIn:</p>
+      <a class="button" href="https://www.linkedin.com/in/norm-miller-94968336b/" target="_blank">Visit My LinkedIn</a>
+    </section>
 
-      <section id="hobbies">
-        <h2>Hobbies</h2>
-        <ul style="text-align: left;">
-          <li>Traveling</li>
-          <li>Working Out</li>
-          <li>Filmtography</li>
-          <li>Photography</li>
-          <li>Spending time alone to heal and reflect</li>
-        </ul>
-      </section>
+    <section id="certificates">
+      <h2>Certificates</h2>
+      <ul style="text-align: left;">
+        <li><a href="Advanced_Learning_Algorithms_Coursera.pdf" target="_blank" style="text-decoration: underline; color: white;">Advanced Learning Algorithms — Coursera</a></li>
+        <li><a href="Machine_Learning_Specialization_Coursera.pdf" target="_blank" style="text-decoration: underline; color: white;">Machine Learning Specialization — Coursera</a></li>
+        <li><a href="Supervised_Machine_Learning_Regression_and_Classification_Coursera.pdf" target="_blank" style="text-decoration: underline; color: white;">Supervised Machine Learning: Regression and Classification — Coursera</a></li>
+        <li><a href="Unsupervised_Learning_Recommenders_&_Reinforcement_Learning_Coursera.pdf" target="_blank" style="text-decoration: underline; color: white;">Unsupervised Learning, Recommenders, & Reinforcement Learning — Coursera</a></li>
+        <li><a href="Data_Science_Job_Simulation_for_British_Airways_Certificate.pdf" target="_blank" style="text-decoration: underline; color: white;">Data Science Job Simulation — British Airways Certificate</a></li>
+        <li><a href="Data_Visualisation_Empowering_Business_with_Effective_Insights_Certificate_with_TATA.pdf" target="_blank" style="text-decoration: underline; color: white;">Data Visualisation: Empowering Business with Effective Insights — TATA</a></li>
+        <li><a href="GenAI_Powered_Data_Analytics_Job_Simulation_TATA_Certificate.pdf" target="_blank" style="text-decoration: underline; color: white;">GenAI Powered Data Analytics Job Simulation — TATA Certificate</a></li>
+      </ul>
+    </section>
 
-      <section id="certificates">
-        <h2>Certificates</h2>
-        <ul style="text-align: left;">
-          <li><a href="Advanced Learning Algorithms Coursera.pdf" target="_blank" style="text-decoration: underline; color: white;">Advanced Learning Algorithms — Coursera</a></li>
-          <li><a href="Data Science Job Simulation for British Airways Certificate.pdf" target="_blank" style="text-decoration: underline; color: white;">Data Science Job Simulation — British Airways Certificate</a></li>
-          <li><a href="certificates/TATA_Data_Visualisation_Certificate.pdf" target="_blank" style="text-decoration: underline; color: white;">Data Visualisation: Empowering Business with Effective Insights — TATA</a></li>
-          <li><a href="certificates/TATA_GenAI_Data_Analytics.pdf" target="_blank" style="text-decoration: underline; color: white;">GenAI Powered Data Analytics Job Simulation — TATA Certificate</a></li>
-          <li><a href="certificates/Machine_Learning_Specialization_Coursera.pdf" target="_blank" style="text-decoration: underline; color: white;">Machine Learning Specialization — Coursera</a></li>
-          <li><a href="certificates/Supervised_ML_Regression_Classification.pdf" target="_blank" style="text-decoration: underline; color: white;">Supervised Machine Learning: Regression and Classification — Coursera</a></li>
-          <li><a href="certificates/Unsupervised_Recommenders_Reinforcement.pdf" target="_blank" style="text-decoration: underline; color: white;">Unsupervised Learning, Recommenders, & Reinforcement Learning — Coursera</a></li>
-        </ul>
-      </section>
-      
-      <section id="projects">
-        <h2>Projects</h2>
-        <ul style="text-align: left;">
-          <li>NYC Transit Ridership: Subways vs. Buses — Analyzed ridership trends using Python and visualized via graphs.</li>
-          <li>December 2020 Weather Patterns vs CitiBike Ridership — Used machine learning to forecast ride patterns.</li>
-          <li>Restaurant and Gym Membership Website — Built dynamic HTML/JS interfaces with forms and modals.</li>
-          <li>2024 Experimental Learning Symposium — Presented research on weather and transportation data.</li>
-          <li>Customer Segmentation — Used clustering and Apriori for consumer behavior insights.</li>
-          <li>Poetic Codes (2025 Honors Scholars Program) — Merged poetry analysis and NLP in Google Colab for final presentation.</li>
-        </ul>
-      </section>
+    <section id="projects">
+      <h2>Projects</h2>
+      <ul style="text-align: left;">
+        <li>NYC Transit Ridership: Subways vs. Buses — Analyzed ridership trends using Python and visualized via graphs.</li>
+        <li>December 2020 Weather Patterns vs CitiBike Ridership — Used machine learning to forecast ride patterns.</li>
+        <li>Restaurant and Gym Membership Website — Built dynamic HTML/JS interfaces with forms and modals.</li>
+        <li>2024 Experimental Learning Symposium — Presented research on weather and transportation data.</li>
+        <li>Customer Segmentation — Used clustering and Apriori for consumer behavior insights.</li>
+        <li>Poetic Codes (2025 Honors Scholars Program) — Merged poetry analysis and NLP in Google Colab for final presentation.</li>
+      </ul>
+    </section>
 
-      <section id="experience">
-        <h2>Work Experience</h2>
-        <ul style="text-align: left;">
-          <li>CUNY City Tech - Tech Talent Pipeline Residency (06/2025 - 08/2025)</li>
-          <li>CUNY City Tech — Student Ambassador (05/2024 – 06/2024)</li>
-          <li>ASAAL — Organizer/Intern (07/2017 – 08/2017)</li>
-          <li>HRA Infoline SYEP — Office Intern (07/2016 – 08/2016)</li>
-          <li>ResCare NYC SYEP — Clerical Intern (07/2014 – 08/2014)</li>
-        </ul>
-      </section>
+    <section id="experience">
+      <h2>Work Experience</h2>
+      <ul style="text-align: left;">
+        <li>CUNY City Tech - Tech Talent Pipeline Residency (06/2025 - 08/2025)</li>
+        <li>CUNY City Tech — Student Ambassador (05/2024 – 06/2024)</li>
+        <li>ASAAL — Organizer/Intern (07/2017 – 08/2017)</li>
+        <li>HRA Infoline SYEP — Office Intern (07/2016 – 08/2016)</li>
+        <li>ResCare NYC SYEP — Clerical Intern (07/2014 – 08/2014)</li>
+      </ul>
+    </section>
 
-      <section id="associations">
-        <h2>Associations & Interests</h2>
-        <ul style="text-align: left;">
-          <li>NYPIRG — Statewide Student Board of Directors (06/2024 – Present)</li>
-        </ul>
-      </section>
-    </div>
+    <section id="associations">
+      <h2>Associations & Interests</h2>
+      <ul style="text-align: left;">
+        <li>NYPIRG — Statewide Student Board of Directors (06/2024 – Present)</li>
+      </ul>
+    </section>
+
+    <section id="hobbies">
+      <h2>Hobbies</h2>
+      <ul style="text-align: left;">
+        <li>Traveling</li>
+        <li>Working Out</li>
+        <li>Filmtography</li>
+        <li>Photography</li>
+        <li>Spending time alone to heal and reflect</li>
+      </ul>
+    </section>
 
     <section id="contact">
       <h2>Contact</h2>
@@ -285,9 +264,8 @@
     <div style="margin-top: 2em;">
       <a href="#top" class="button">Back to Top</a>
     </div>
-    <p>2025 Norm Miller. All rights reserved.</p>
+    <p>© 2025 Norm Miller. All rights reserved.</p>
   </footer>
 
 </body>
 </html>
-
