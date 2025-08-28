@@ -1,318 +1,63 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Norm Miller</title>
-  <style>
-    /* === Smooth Scroll === */
-    html {
-      scroll-behavior: smooth;
-    }
+<section id="certificates">
+  <h2>Certificates</h2>
 
-    /* === Background & Base === */
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background-image: url('https://www.solidbackgrounds.com/images/1920x1080/1920x1080-navy-blue-solid-color-background.jpg');
-      background-size: cover;
-      background-attachment: fixed;
-      background-repeat: no-repeat;
-      color: white;
-    }
+  <!-- Coursera -->
+  <h3>Coursera</h3>
+  <ul style="text-align: left;">
+    <li>
+      <a href="https://www.coursera.org/account/accomplishments/specialization/9H7ZSE4QFAIF" target="_blank">
+        Machine Learning Specialization — Coursera
+      </a>
+    </li>
+    <li>
+      <a href="certificates/Advanced_Learning_Algorithms_Coursera.pdf" target="_blank">
+        Advanced Learning Algorithms (PDF) — Coursera
+      </a>
+    </li>
+    <li>
+      <a href="https://www.coursera.org/account/accomplishments/certificate/422KUW7ERP1N" target="_blank">
+        Supervised Machine Learning: Regression and Classification — Coursera
+      </a>
+    </li>
+    <li>
+      <a href="https://www.coursera.org/account/accomplishments/certificate/BZYHO4Z2E1TD" target="_blank">
+        Unsupervised Learning, Recommenders, & Reinforcement Learning — Coursera
+      </a>
+    </li>
+  </ul>
 
-    /* === Header === */
-    header {
-      background-color: rgba(0, 0, 128, 0.85);
-      padding: 1.5em 0;
-      text-align: center;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-    }
+  <!-- Forage -->
+  <h3>Forage</h3>
+  <ul style="text-align: left;">
+    <li>
+      <a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/tMjbs76F526fF5v3G/NjynCWzGSaWXQCxSX_tMjbs76F526fF5v3G_HGPGDFjpGXQRjirze_1756324487525_completion_certificate.pdf" target="_blank">
+        Data Science Job Simulation — British Airways (Forage)
+      </a>
+    </li>
+    <li>
+      <a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/ifobHAoMjQs9s6bKS/MyXvBcppsW2FkNYCX_ifobHAoMjQs9s6bKS_HGPGDFjpGXQRjirze_1756324487889_completion_certificate.pdf" target="_blank">
+        Data Visualization: Empowering Business with Effective Insights — TATA (Forage)
+      </a>
+    </li>
+    <li>
+      <a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/ifobHAoMjQs9s6bKS/gMTdCXwDdLYoXZ3wG_ifobHAoMjQs9s6bKS_HGPGDFjpGXQRjirze_1756324488162_completion_certificate.pdf" target="_blank">
+        GenAI Powered Data Analytics Job Simulation — TATA (Forage)
+      </a>
+    </li>
+  </ul>
 
-    header h1 {
-      margin: 0;
-      font-size: 2em;
-    }
-
-    nav ul {
-      list-style: none;
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      padding: 0;
-      margin-top: 1em;
-    }
-
-    nav ul li {
-      margin: 0 15px;
-    }
-
-    nav ul li a {
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    nav ul li a:hover {
-      text-decoration: underline;
-    }
-
-    /* === Bubble Style === */
-    section {
-      background-color: rgba(255, 255, 255, 0.1);
-      color: white;
-      padding: 2em;
-      border-radius: 25px;
-      margin: 2em auto;
-      max-width: 900px;
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-    }
-
-    h2, p, li, a {
-      color: white;
-      text-decoration: none;
-    }
-
-    .center {
-      text-align: center;
-    }
-
-    /* === About Section Enhancements === */
-    .about-container {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      justify-content: center;
-      gap: 2em;
-      margin: 2em auto;
-      max-width: 900px;
-    }
-
-    .about-text {
-      flex: 1 1 400px;
-    }
-
-    .about-image {
-      flex: 1 1 300px;
-      text-align: center;
-    }
-
-    .about-image img {
-      max-width: 100%;
-      border-radius: 12px;
-      border: 3px solid rgba(255,255,255,0.3);
-      box-shadow: 0 8px 20px rgba(0,0,0,0.4);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-
-    .about-image img:hover {
-      transform: scale(1.05);
-      box-shadow: 0 12px 30px rgba(0,0,0,0.5);
-    }
-
-    /* === Buttons === */
-    .button {
-      display: inline-block;
-      margin-top: 10px;
-      padding: 10px 20px;
-      background-color: #00008B;
-      color: white;
-      border-radius: 5px;
-      text-decoration: none;
-      font-weight: bold;
-      transition: background-color 0.3s ease;
-    }
-
-    .button:hover {
-      background-color: #000080;
-    }
-
-    /* === Footer === */
-    footer {
-      text-align: center;
-      padding: 1em;
-      background-color: rgba(0, 0, 128, 0.85);
-      margin-top: 3em;
-    }
-
-    /* === Responsive === */
-    @media (max-width: 700px) {
-      .about-container {
-        flex-direction: column;
-        align-items: center;
-      }
-
-      .about-text, .about-image {
-        flex: 1 1 100%;
-      }
-    }
-  </style>
-</head>
-<body>
-
-  <!-- Top Anchor -->
-  <a id="top"></a>
-
-  <header>
-    <h1>Norm Miller's Personal Website</h1>
-    <nav>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#resume">Resume</a></li>
-        <li><a href="#linkedin">LinkedIn</a></li>
-        <li><a href="#certificates">Certificates</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#associations">Associations</a></li>
-        <li><a href="#hobbies">Hobbies</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <main>
-    <section id="about" class="about-container">
-      <div class="about-text">
-        <h2>About Me</h2>
-        <p>
-          Good day! My name is Norm Miller. I am a rising senior majoring in Data Science and pursuing an academic minor in History at CUNY New York City College of Technology (City Tech). Last semester, I participated in the Honors Scholars Program, completing an honors credit in a regular course for my ENG 2142 Poetry class. For that project, I used Google Colaboratory, applying data mining, visualization, management, and analysis techniques to showcase different genres and eras of poetry.
-        </p>
-        <p>
-          I am also a member of the New York Public Interest Research Group (NYPIRG) at City Tech, serving as one of our statewide student delegates. We develop proposals to benefit the public interest of New Yorkers across the state. If you’d like to learn more about me, please don’t hesitate to contact me.
-        </p>
-      </div>
-      <div class="about-image">
-        <img src="Norm2.JPG" alt="Portrait of Norm Miller">
-      </div>
-    </section>
-
-    <section id="resume">
-      <h2>Resume</h2>
-      <p>Click below to download my resume:</p>
-      <a class="button" href="Resume.pdf" download="NormMiller_Resume.pdf">Download Resume</a>
-    </section>
-
-    <section id="linkedin">
-      <h2>LinkedIn</h2>
-      <p>Connect with me on LinkedIn:</p>
-      <a class="button" href="https://www.linkedin.com/in/norm-miller-94968336b/" target="_blank">Visit My LinkedIn</a>
-    </section>
-
-    <section id="certificates">
-      <h2>Certificates</h2>
-
-      <!-- Coursera -->
-      <h3>Coursera</h3>
-      <ul style="text-align: left;">
-        <li><a href="https://www.coursera.org/account/accomplishments/specialization/9H7ZSE4QFAIF" target="_blank">Machine Learning Specialization — Coursera</a></li>
-        <li><a href="Advanced_Learning_Algorithms_Coursera.pdf" target="_blank">Advanced Learning Algorithms (PDF) — Coursera</a></li>
-        <li><a href="https://www.coursera.org/account/accomplishments/certificate/422KUW7ERP1N" target="_blank">Supervised Machine Learning: Regression and Classification — Coursera</a></li>
-        <li><a href="https://www.coursera.org/account/accomplishments/certificate/T1IY70WCA007" target="_blank">Advanced Learning Algorithms — Coursera</a></li>
-        <li><a href="https://www.coursera.org/account/accomplishments/certificate/BZYHO4Z2E1TD" target="_blank">Unsupervised Learning, Recommenders, & Reinforcement Learning — Coursera</a></li>
-      </ul>
-
-      <p>
-        I have completed multiple Coursera certifications in <em>Machine Learning</em>, 
-        <em>Supervised Machine Learning: Regression and Classification</em>, 
-        <em>Advanced Learning Algorithms</em>, and 
-        <em>Unsupervised Learning, Recommenders, and Reinforcement Learning</em>. 
-        These courses gave me hands-on experience with Python, NumPy, scikit-learn, and TensorFlow. 
-        I built supervised models such as linear and logistic regression, developed neural networks, 
-        and implemented decision trees and ensemble methods. I applied best practices like cross-validation, 
-        feature engineering, hyperparameter tuning, and model evaluation. Additionally, I explored clustering, 
-        anomaly detection, recommender systems, and reinforcement learning.
-      </p>
-
-      <!-- Forage -->
-      <h3>Forage</h3>
-      <ul style="text-align: left;">
-        <li><a href="chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/tMjbs76F526fF5v3G/NjynCWzGSaWXQCxSX_tMjbs76F526fF5v3G_HGPGDFjpGXQRjirze_1756324487525_completion_certificate.pdf" target="_blank">Data Science Job Simulation — British Airways (Forage)</a></li>
-      </ul>
-      <p><strong>British Airways Data Science Job Simulation — July 2025</strong><br>
-      • Scraped and analyzed customer review data to uncover insights.<br>
-      • Built a predictive model to understand factors influencing buying behavior.</p>
-
-      <ul style="text-align: left;">
-        <li><a href="chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/ifobHAoMjQs9s6bKS/MyXvBcppsW2FkNYCX_ifobHAoMjQs9s6bKS_HGPGDFjpGXQRjirze_1756324487889_completion_certificate.pdf" target="_blank">Data Visualization: Empowering Business with Effective Insights — TATA (Forage)</a></li>
-      </ul>
-      <p><strong>Tata Data Visualization: Empowering Business with Effective Insights — July 2025</strong><br>
-      • Created executive-level data visualizations.<br>
-      • Prepared client-focused questions for senior leadership.<br>
-      • Developed visuals to support effective decision-making.</p>
-
-      <ul style="text-align: left;">
-        <li><a href="chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/ifobHAoMjQs9s6bKS/gMTdCXwDdLYoXZ3wG_ifobHAoMjQs9s6bKS_HGPGDFjpGXQRjirze_1756324488162_completion_certificate.pdf" target="_blank">GenAI Powered Data Analytics Job Simulation — TATA (Forage)</a></li>
-      </ul>
-      <p><strong>Tata Group GenAI Powered Data Analytics Simulation — July 2025</strong><br>
-      • Conducted exploratory data analysis (EDA) using GenAI tools.<br>
-      • Proposed a no-code predictive modeling framework.<br>
-      • Designed an AI-driven collections strategy with ethical AI principles.</p>
-
-      <!-- CUNY -->
-      <h3>CUNY City Tech</h3>
-      <ul style="text-align: left;">
-        <li><a href="Spring Term 2025 Honors Scholars Program Certificate.pdf" target="_blank">Honors Scholars Program Certificate — Spring 2025</a></li>
-        <li><a href="Spring Term 2024 Experiential Learning Symposium.pdf" target="_blank">Experiential Learning Symposium — Spring 2024</a></li>
-      </ul>
-    </section>
-    
-    <section id="projects">
-      <h2>Projects</h2>
-      <ul style="text-align: left;">
-        <li>NYC Transit Ridership: Subways vs. Buses — Analyzed ridership trends using Python and visualized results.</li>
-        <li>December 2020 Weather vs. CitiBike Ridership — Applied machine learning to forecast ride patterns.</li>
-        <li>Restaurant and Gym Membership Website — Built dynamic HTML/JS interfaces with forms and modals.</li>
-        <li>Experimental Learning Symposium 2024 — Presented research on weather and transportation data.</li>
-        <li>Customer Segmentation — Applied clustering and Apriori for consumer behavior insights.</li>
-        <li>Poetic Codes (Honors Scholars Program 2025) — Combined poetry analysis and NLP in Google Colab.</li>
-      </ul>
-    </section>
-
-    <section id="experience">
-      <h2>Work Experience</h2>
-      <ul style="text-align: left;">
-        <li>CUNY City Tech — Tech Talent Pipeline Residency (06/2025 - 08/2025)</li>
-        <li>CUNY City Tech — Student Ambassador (05/2024 – 06/2024)</li>
-        <li>ASAAL — Organizer/Intern (07/2017 – 08/2017)</li>
-        <li>HRA Infoline SYEP — Office Intern (07/2016 – 08/2016)</li>
-        <li>ResCare NYC SYEP — Clerical Intern (07/2014 – 08/2014)</li>
-      </ul>
-    </section>
-
-    <section id="associations">
-      <h2>Associations & Interests</h2>
-      <ul style="text-align: left;">
-        <li>NYPIRG — Statewide Student Board of Directors (06/2024 – Present)</li>
-      </ul>
-    </section>
-
-    <section id="hobbies">
-      <h2>Hobbies</h2>
-      <ul style="text-align: left;">
-        <li>Traveling</li>
-        <li>Working Out</li>
-        <li>Filmography</li>
-        <li>Photography</li>
-        <li>Spending time alone to heal and reflect</li>
-      </ul>
-    </section>
-
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>Email me at: <a href="mailto:norm.miller1@gmail.com">norm.miller1@gmail.com</a> or <a href="mailto:Norm.Miller@mail.citytech.cuny.edu">Norm.Miller@mail.citytech.cuny.edu</a></p>
-      <p>Phone: 1-646-926-6178</p>
-    </section>
-  </main>
-
-  <footer>
-    <div style="margin-top: 2em;">
-      <a href="#top" class="button">Back to Top</a>
-    </div>
-    <p>© 2025 Norm Miller. All rights reserved.</p>
-  </footer>
-
-</body>
-</html>
-
-
+  <!-- CUNY City Tech -->
+  <h3>CUNY City Tech</h3>
+  <ul style="text-align: left;">
+    <li>
+      <a href="certificates/Spring_Term_2025_Honors_Scholars_Program_Certificate.pdf" target="_blank">
+        Honors Scholars Program Certificate — Spring 2025
+      </a>
+    </li>
+    <li>
+      <a href="certificates/Spring_Term_2024_Experiential_Learning_Symposium.pdf" target="_blank">
+        Experiential Learning Symposium — Spring 2024
+      </a>
+    </li>
+  </ul>
+</section>
