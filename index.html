@@ -6,7 +6,9 @@
   <title>Norm Miller</title>
   <style>
     /* === Smooth Scroll === */
-    html { scroll-behavior: smooth; }
+    html {
+      scroll-behavior: smooth;
+    }
 
     /* === Background & Base === */
     body {
@@ -28,7 +30,10 @@
       box-shadow: 0 4px 10px rgba(0,0,0,0.2);
     }
 
-    header h1 { margin: 0; font-size: 2em; }
+    header h1 {
+      margin: 0;
+      font-size: 2em;
+    }
 
     nav ul {
       list-style: none;
@@ -39,11 +44,21 @@
       margin-top: 1em;
     }
 
-    nav ul li { margin: 0 15px; }
-    nav ul li a { color: white; text-decoration: none; font-weight: bold; }
-    nav ul li a:hover { text-decoration: underline; }
+    nav ul li {
+      margin: 0 15px;
+    }
 
-    /* === Section Styling === */
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav ul li a:hover {
+      text-decoration: underline;
+    }
+
+    /* === Bubble Style === */
     section {
       background-color: rgba(255, 255, 255, 0.1);
       color: white;
@@ -54,8 +69,14 @@
       box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
     }
 
-    h2, p, li, a { color: white; text-decoration: none; }
-    .center { text-align: center; }
+    h2, p, li, a {
+      color: white;
+      text-decoration: none;
+    }
+
+    .center {
+      text-align: center;
+    }
 
     /* === About Section Enhancements === */
     .about-container {
@@ -68,8 +89,15 @@
       max-width: 900px;
     }
 
-    .about-text { flex: 1 1 400px; }
-    .about-image { flex: 1 1 300px; text-align: center; }
+    .about-text {
+      flex: 1 1 400px;
+    }
+
+    .about-image {
+      flex: 1 1 300px;
+      text-align: center;
+    }
+
     .about-image img {
       max-width: 100%;
       border-radius: 12px;
@@ -77,6 +105,7 @@
       box-shadow: 0 8px 20px rgba(0,0,0,0.4);
       transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
+
     .about-image img:hover {
       transform: scale(1.05);
       box-shadow: 0 12px 30px rgba(0,0,0,0.5);
@@ -94,7 +123,10 @@
       font-weight: bold;
       transition: background-color 0.3s ease;
     }
-    .button:hover { background-color: #000080; }
+
+    .button:hover {
+      background-color: #000080;
+    }
 
     /* === Footer === */
     footer {
@@ -149,178 +181,186 @@
 
     /* === Responsive === */
     @media (max-width: 700px) {
-      .about-container { flex-direction: column; align-items: center; }
-      .about-text, .about-image { flex: 1 1 100%; }
+      .about-container {
+        flex-direction: column;
+        align-items: center;
+      }
+      .about-text, .about-image {
+        flex: 1 1 100%;
+      }
     }
   </style>
 </head>
 <body>
-<a id="top"></a>
+  <!-- Top Anchor -->
+  <a id="top"></a>
 
-<header>
-  <h1>Norm Miller's Personal Website</h1>
-  <nav>
-    <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#resume">Resume</a></li>
-      <li><a href="#linkedin">LinkedIn</a></li>
-      <li><a href="#certificates">Certificates</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#associations">Associations</a></li>
-      <li><a href="#hobbies">Hobbies</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
-</header>
+  <header>
+    <h1>Norm Miller's Personal Website</h1>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#linkedin">LinkedIn</a></li>
+        <li><a href="#certificates">Certificates</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#associations">Associations</a></li>
+        <li><a href="#hobbies">Hobbies</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-<main>
-  <!-- About -->
-  <section id="about" class="about-container">
-    <div class="about-text">
-      <h2>About Me</h2>
-      <p>Good day! My name is Norm Miller. I am a rising senior majoring in Data Science and pursuing an academic minor in History at CUNY New York City College of Technology (City Tech). Last semester, I participated in the Honors Scholars Program, completing an honors credit in a regular course for my ENG 2142 Poetry class. For that project, I used Google Colaboratory, applying data mining, visualization, management, and analysis techniques to showcase different genres and eras of poetry.</p>
-      <p>I am also a member of the New York Public Interest Research Group (NYPIRG) at City Tech, serving as one of our statewide student delegates. We develop proposals to benefit the public interest of New Yorkers across the state. If you’d like to learn more about me, please don’t hesitate to contact me.</p>
-    </div>
-    <div class="about-image">
-      <img src="Norm2.JPG" alt="Portrait of Norm Miller">
-    </div>
-  </section>
-
-  <!-- Resume -->
-  <section id="resume">
-    <h2>Resume</h2>
-    <p>Click below to download my resume:</p>
-    <a class="button" href="Resume.pdf" download="NormMiller_Resume.pdf">Download Resume</a>
-  </section>
-
-  <!-- LinkedIn -->
-  <section id="linkedin">
-    <h2>LinkedIn</h2>
-    <p>Connect with me on LinkedIn:</p>
-    <a class="button" href="https://www.linkedin.com/in/norm-miller-94968336b/" target="_blank">Visit My LinkedIn</a>
-  </section>
-
-  <!-- Certificates -->
-  <section id="certificates">
-    <h2>Certificates</h2>
-
-    <!-- Coursera -->
-    <h3>Coursera</h3>
-    <ul style="text-align: left;">
-      <li><a href="#" class="certificate-link" data-pdf="certificates/Machine_Learning_Specialization_Coursera.pdf">Machine Learning Specialization — Coursera</a></li>
-      <li><a href="#" class="certificate-link" data-pdf="certificates/Advanced_Learning_Algorithms_Coursera.pdf">Advanced Learning Algorithms — Coursera</a></li>
-      <li><a href="https://www.coursera.org/account/accomplishments/certificate/422KUW7ERP1N" class="certificate-link" data-pdf="certificates/Supervised_Machine_Learning_Regression_Classification.pdf">Supervised Machine Learning: Regression and Classification — Coursera</a></li>
-      <li><a href="https://www.coursera.org/account/accomplishments/certificate/BZYHO4Z2E1TD" class="certificate-link" data-pdf="certificates/Unsupervised_Learning_Recommenders_Reinforcement_Learning.pdf">Unsupervised Learning, Recommenders, & Reinforcement Learning — Coursera</a></li>
-    </ul>
-
-    <!-- Forage -->
-    <h3>Forage</h3>
-    <ul style="text-align: left;">
-      <li><a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/tMjbs76F526fF5v3G/NjynCWzGSaWXQCxSX_tMjbs76F526fF5v3G_HGPGDFjpGXQRjirze_1756324487525_completion_certificate.pdf" class="certificate-link" data-pdf="certificates/Data_Science_Job_Simulation_British_Airways.pdf">Data Science Job Simulation — British Airways</a></li>
-      <li><a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/ifobHAoMjQs9s6bKS/MyXvBcppsW2FkNYCX_ifobHAoMjQs9s6bKS_HGPGDFjpGXQRjirze_1756324487889_completion_certificate.pdf" class="certificate-link" data-pdf="certificates/Data_Visualization_TATA.pdf">Data Visualization — TATA</a></li>
-      <li><a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/ifobHAoMjQs9s6bKS/gMTdCXwDdLYoXZ3wG_ifobHAoMjQs9s6bKS_HGPGDFjpGXQRjirze_1756324488162_completion_certificate.pdf" class="certificate-link" data-pdf="certificates/GenAI_Powered_Data_Analytics_TATA.pdf">GenAI Powered Data Analytics — TATA</a></li>
-    </ul>
-
-    <!-- CUNY City Tech -->
-    <h3>CUNY City Tech</h3>
-    <ul style="text-align: left;">
-      <li><a href="#" class="certificate-link" data-pdf="certificates/Spring_Term_2025_Honors_Scholars_Program_Certificate.pdf">Honors Scholars Program Certificate — Spring 2025</a></li>
-      <li><a href="#" class="certificate-link" data-pdf="certificates/Spring_Term_2024_Experiential_Learning_Symposium.pdf">Experiential Learning Symposium — Spring 2024</a></li>
-    </ul>
-
-    <!-- PDF Modal -->
-    <div id="pdfModal">
-      <div>
-        <button id="closeModal">Close</button>
-        <iframe id="pdfViewer"></iframe>
+  <main>
+    <!-- About Section -->
+    <section id="about" class="about-container">
+      <div class="about-text">
+        <h2>About Me</h2>
+        <p>
+          Good day! My name is Norm Miller. I am a rising senior majoring in Data Science and pursuing an academic minor in History at CUNY New York City College of Technology (City Tech). Last semester, I participated in the Honors Scholars Program, completing an honors credit in a regular course for my ENG 2142 Poetry class. For that project, I used Google Colaboratory, applying data mining, visualization, management, and analysis techniques to showcase different genres and eras of poetry.
+        </p>
+        <p>
+          I am also a member of the New York Public Interest Research Group (NYPIRG) at City Tech, serving as one of our statewide student delegates. We develop proposals to benefit the public interest of New Yorkers across the state. If you’d like to learn more about me, please don’t hesitate to contact me.
+        </p>
       </div>
+      <div class="about-image">
+        <img src="Norm2.JPG" alt="Portrait of Norm Miller">
+      </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume">
+      <h2>Resume</h2>
+      <p>Click below to download my resume:</p>
+      <a class="button" href="Resume.pdf" download="NormMiller_Resume.pdf">Download Resume</a>
+    </section>
+
+    <!-- LinkedIn Section -->
+    <section id="linkedin">
+      <h2>LinkedIn</h2>
+      <p>Connect with me on LinkedIn:</p>
+      <a class="button" href="https://www.linkedin.com/in/norm-miller-94968336b/" target="_blank">Visit My LinkedIn</a>
+    </section>
+
+    <!-- Certificates Section -->
+    <section id="certificates">
+      <h2>Certificates</h2>
+
+      <!-- Coursera -->
+      <h3>Coursera</h3>
+      <ul style="text-align: left;">
+        <li><a href="certificates/Machine_Learning_Specialization_Coursera.pdf" target="_blank">Machine Learning Specialization — Coursera</a></li>
+        <li><a href="certificates/Advanced_Learning_Algorithms_Coursera.pdf" class="certificate-pdf" data-pdf="Advanced_Learning_Algorithms_Coursera.pdf">Advanced Learning Algorithms (PDF) — Coursera</a></li>
+        <li><a href="certificates/Supervised_Machine_Learning_Regression_and_Classification_Coursera.pdf" target="_blank">Supervised Machine Learning: Regression and Classification — Coursera</a></li>
+        <li><a href="certificates/Unsupervised_Learning_Recommenders_&_Reinforcement_Learning_Coursera.pdf" target="_blank">Unsupervised Learning, Recommenders, & Reinforcement Learning — Coursera</a></li>
+      </ul>
+
+      <!-- Forage -->
+      <h3>Forage</h3>
+      <ul style="text-align: left;">
+        <li><a href="certificates/Data_Science_Job_Simulation_for_British_Airways_Certificate.pdf" class="certificate-pdf" data-pdf="Data_Science_Job_Simulation_British_Airways.pdf">Data Science Job Simulation — British Airways (Forage)</a></li>
+        <li><a href="certificates/Data_Visualisation_Empowering_Business_with_Effective_Insights_Certificate_with_TATA.pdf" class="certificate-pdf" data-pdf="Data_Visualization_TATA.pdf">Data Visualization: Empowering Business with Effective Insights — TATA (Forage)</a></li>
+        <li><a href="certificates/GenAI_Powered_Data_Analytics_Job_Simulation_TATA_Certificate.pdf" class="certificate-pdf" data-pdf="GenAI_Data_Analytics_TATA.pdf">GenAI Powered Data Analytics Job Simulation — TATA (Forage)</a></li>
+      </ul>
+
+      <!-- CUNY City Tech -->
+      <h3>CUNY City Tech</h3>
+      <ul style="text-align: left;">
+        <li><a href="certificates/Spring_Term_2025_Honors_Scholars_Program_Certificate.pdf" class="certificate-pdf" data-pdf="Spring_Term_2025_Honors_Scholars_Program_Certificate.pdf">Honors Scholars Program Certificate — Spring 2025</a></li>
+        <li><a href="certificates/Spring_Term_2024_Experiential_Learning_Symposium.pdf" class="certificate-pdf" data-pdf="Spring_Term_2024_Experiential_Learning_Symposium.pdf">Experiential Learning Symposium — Spring 2024</a></li>
+      </ul>
+
+      <!-- Modal for PDF viewing -->
+      <div id="pdfModal">
+        <div>
+          <button id="closeModal">Close</button>
+          <iframe id="pdfViewer" src=""></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+      <h2>Projects</h2>
+      <ul style="text-align: left;">
+        <li>NYC Transit Ridership: Subways vs. Buses — Analyzed ridership trends using Python and visualized results.</li>
+        <li>December 2020 Weather vs. CitiBike Ridership — Applied machine learning to forecast ride patterns.</li>
+        <li>Restaurant and Gym Membership Website — Built dynamic HTML/JS interfaces with forms and modals.</li>
+        <li>Experimental Learning Symposium 2024 — Presented research on weather and transportation data.</li>
+        <li>Customer Segmentation — Applied clustering and Apriori for consumer behavior insights.</li>
+        <li>Poetic Codes (Honors Scholars Program 2025) — Combined poetry analysis and NLP in Google Colab.</li>
+      </ul>
+    </section>
+
+    <!-- Work Experience Section -->
+    <section id="experience">
+      <h2>Work Experience</h2>
+      <ul style="text-align: left;">
+        <li>CUNY City Tech — Tech Talent Pipeline Residency (06/2025 - 08/2025)</li>
+        <li>CUNY City Tech — Student Ambassador (05/2024 – 06/2024)</li>
+        <li>ASAAL — Organizer/Intern (07/2017 – 08/2017)</li>
+        <li>HRA Infoline SYEP — Office Intern (07/2016 – 08/2016)</li>
+        <li>ResCare NYC SYEP — Clerical Intern (07/2014 – 08/2014)</li>
+      </ul>
+    </section>
+
+    <!-- Associations Section -->
+    <section id="associations">
+      <h2>Associations & Interests</h2>
+      <ul style="text-align: left;">
+        <li>NYPIRG — Statewide Student Board of Directors (06/2024 – Present)</li>
+      </ul>
+    </section>
+
+    <!-- Hobbies Section -->
+    <section id="hobbies">
+      <h2>Hobbies</h2>
+      <ul style="text-align: left;">
+        <li>Traveling</li>
+        <li>Working Out</li>
+        <li>Filmography</li>
+        <li>Photography</li>
+        <li>Spending time alone to heal and reflect</li>
+      </ul>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email me at: <a href="mailto:norm.miller1@gmail.com">norm.miller1@gmail.com</a> or <a href="mailto:Norm.Miller@mail.citytech.cuny.edu">Norm.Miller@mail.citytech.cuny.edu</a></p>
+      <p>Phone: 1-646-926-6178</p>
+    </section>
+  </main>
+
+  <footer>
+    <div style="margin-top: 2em;">
+      <a href="#top" class="button">Back to Top</a>
     </div>
-  </section>
+    <p>© 2025 Norm Miller. All rights reserved.</p>
+  </footer>
 
-  <!-- Projects -->
-  <section id="projects">
-    <h2>Projects</h2>
-    <ul style="text-align: left;">
-      <li>NYC Transit Ridership: Subways vs. Buses — Analyzed ridership trends using Python and visualized results.</li>
-      <li>December 2020 Weather vs. CitiBike Ridership — Applied machine learning to forecast ride patterns.</li>
-      <li>Restaurant and Gym Membership Website — Built dynamic HTML/JS interfaces with forms and modals.</li>
-      <li>Experimental Learning Symposium 2024 — Presented research on weather and transportation data.</li>
-      <li>Customer Segmentation — Applied clustering and Apriori for consumer behavior insights.</li>
-      <li>Poetic Codes (Honors Scholars Program 2025) — Combined poetry analysis and NLP in Google Colab.</li>
-    </ul>
-  </section>
-
-  <!-- Experience -->
-  <section id="experience">
-    <h2>Work Experience</h2>
-    <ul style="text-align: left;">
-      <li>CUNY City Tech — Tech Talent Pipeline Residency (06/2025 - 08/2025)</li>
-      <li>CUNY City Tech — Student Ambassador (05/2024 – 06/2024)</li>
-      <li>ASAAL — Organizer/Intern (07/2017 – 08/2017)</li>
-      <li>HRA Infoline SYEP — Office Intern (07/2016 – 08/2016)</li>
-      <li>ResCare NYC SYEP — Clerical Intern (07/2014 – 08/2014)</li>
-    </ul>
-  </section>
-
-  <!-- Associations -->
-  <section id="associations">
-    <h2>Associations & Interests</h2>
-    <ul style="text-align: left;">
-      <li>NYPIRG — Statewide Student Board of Directors (06/2024 – Present)</li>
-    </ul>
-  </section>
-
-  <!-- Hobbies -->
-  <section id="hobbies">
-    <h2>Hobbies</h2>
-    <ul style="text-align: left;">
-      <li>Traveling</li>
-      <li>Working Out</li>
-      <li>Filmography</li>
-      <li>Photography</li>
-      <li>Spending time alone to heal and reflect</li>
-    </ul>
-  </section>
-
-  <!-- Contact -->
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email me at: <a href="mailto:norm.miller1@gmail.com">norm.miller1@gmail.com</a> or <a href="mailto:Norm.Miller@mail.citytech.cuny.edu">Norm.Miller@mail.citytech.cuny.edu</a></p>
-    <p>Phone: 1-646-926-6178</p>
-  </section>
-</main>
-
-<footer>
-  <div style="margin-top: 2em;">
-    <a href="#top" class="button">Back to Top</a>
-  </div>
-  <p>© 2025 Norm Miller. All rights reserved.</p>
-</footer>
-
-<script>
-  // Modal PDF viewer logic
-  document.querySelectorAll('.certificate-link').forEach(function(link) {
-    link.addEventListener('click', function(e) {
-      e.preventDefault();
-      var pdfUrl = link.getAttribute('data-pdf');
-      document.getElementById('pdfViewer').src = pdfUrl;
-      document.getElementById('pdfModal').style.display = 'flex';
+  <script>
+    // Modal PDF viewer logic
+    document.querySelectorAll('.certificate-pdf').forEach(function(link) {
+      link.addEventListener('click', function(e) {
+        e.preventDefault();
+        var pdfUrl = link.getAttribute('data-pdf');
+        document.getElementById('pdfViewer').src = pdfUrl;
+        document.getElementById('pdfModal').style.display = 'flex';
+      });
     });
-  });
-
-  document.getElementById('closeModal').onclick = function() {
-    document.getElementById('pdfModal').style.display = 'none';
-    document.getElementById('pdfViewer').src = '';
-  };
-
-  document.getElementById('pdfModal').addEventListener('click', function(e) {
-    if (e.target === this) {
+    document.getElementById('closeModal').onclick = function() {
       document.getElementById('pdfModal').style.display = 'none';
       document.getElementById('pdfViewer').src = '';
-    }
-  });
-</script>
+    };
+    document.getElementById('pdfModal').addEventListener('click', function(e) {
+      if (e.target === this) {
+        document.getElementById('pdfModal').style.display = 'none';
+        document.getElementById('pdfViewer').src = '';
+      }
+    });
+  </script>
 </body>
 </html>
 
